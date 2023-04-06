@@ -181,7 +181,9 @@ define([
 			this.engine.addSystem(new VisionSystem(), SystemPriorities.update);
 			this.engine.addSystem(new StaminaSystem(), SystemPriorities.update);
 			this.engine.addSystem(new BagSystem(), SystemPriorities.update);
-			console.log(this.engine.systems.length - 1);
+			log.i("Initializing system: "+(this.engine.systems.length - 1));
+
+			
 			this.engine.addSystem(new CollectorSystem(), SystemPriorities.update);
 			this.engine.addSystem(new FightSystem(true), SystemPriorities.update);
 			this.engine.addSystem(new FollowerSystem(), SystemPriorities.update);
@@ -197,7 +199,8 @@ define([
 			this.engine.addSystem(new SectorStatusSystem(), SystemPriorities.update);
 			this.engine.addSystem(new UnlockedFeaturesSystem(), SystemPriorities.update);
 			this.engine.addSystem(new GlobalResourcesSystem(), SystemPriorities.update);
-			console.log(this.engine.systems.length - 1);
+			log.i("Initializing system: "+(this.engine.systems.length - 1));
+
 			this.engine.addSystem(new CampEventsSystem(), SystemPriorities.update);
 			this.engine.addSystem(new PlayerEventsSystem(), SystemPriorities.update);
 			this.engine.addSystem(new ExcursionSystem(), SystemPriorities.update);
