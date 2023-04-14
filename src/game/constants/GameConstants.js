@@ -1,10 +1,10 @@
 define( function () {
 	var GameConstants = {
 
-		gameSpeedCamp: 1,
-		gameSpeedExploration: 1,
-		isDebugVersion: false,
-		isCheatsEnabled: false,
+		gameSpeedCamp: 2,
+		gameSpeedExploration: 2,
+		isDebugVersion: true,
+		isCheatsEnabled: true,
 		isAutosaveEnabled: true,
 		
 		gameURL: "https://nroutasuo.github.io/level13",
